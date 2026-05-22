@@ -1,27 +1,36 @@
- @media screen and (min-width:640px){
-   /** secton1**/
+  @media screen and (min-width:640px){
+    .media-list{
+    display: flex;flex-direction: column;flex-wrap: wrap;align-items: stretch;
+   } 
+.container-nav {
+
+    display: flex; flex-direction: row;justify-content: space-between; align-items: flex-start;
+  }
+
+  .container-nav ul {
+    display: flex;flex-direction: column;gap: 10px;padding: 0;
+    margin: 0;
+  }
+
+  .container-nav button {
+
+    margin-top: 10px;
+   }
+   }
     .container-hero{
-    width: 100%;
+        width: 80%;flex-direction: column;align-items: center;flex-wrap: wrap;
+    }
+    .hero-right::after{
+    top: ;left: 160%;
    }
-   .hero-left{
-    width: 100%;
-   }
-   .hero-right{
-    width: 100%;margin-top: 2px;margin-bottom: 25px;
-   }
-   .hero-right::after{
-    top: 60px;left: 80%;
-   }
-   .latest-left {
-    width: 100%;
-   }
-   /** section2**/
+   .hero-right{padding-bottom: 40px;align-items: center;margin: auto;}
 .container-latest-articles{display: flex;justify-content: center;
     flex-wrap: wrap;flex-direction: column;
 }
-.latest-right{width: 100%;
-    position: static;top:0;margin-left: 0;margin: 20px auto;
-    justify-content: center;margin-bottom: 50px;
+
+.latest-right{width:fit-content;
+    position: static;top:0;margin-left: 0;margin: 20px auto 50px;align-items: center
+    ;margin-bottom: 50px;text-align: center;
 }
 .display{
 margin: auto;
@@ -29,33 +38,59 @@ margin: auto;
 .trend p{
     font-weight: 500px;font-size: 40px;
 }
-.latest-cards{
-    width: 100%;flex-direction: column;gap: 20px;
+.hero-left-prag{width: 80%;margin-left: 0;
+    font-weight: 300;font-weight: 18px;
+   }
+ .latest-cards{
+   width: 90% ;display: flex;align-items: center;flex-direction: column;
+ }
+ 
+
+.authors-cards{
+   flex-direction: column;align-items: center;flex-wrap: wrap;
 }
+.community-countainer{
+    display: flex;flex-direction: column;flex-wrap: wrap;align-items: center;gap: 40px;
+}
+.footer-container{justify-content: center;margin-top: 0;flex-direction: column;flex-wrap: wrap;
+  width: 80%;margin: auto;display: flex;align-content: center;margin-top: 40px;}
+.last{width: 100%;margin: auto;padding: 20px 40px;flex-direction: column;flex-wrap: wrap;
+  display: flex;align-items: center;justify-content:space-between;
 }
 
-@media screen and (min-width:786px){}
-    
+@media screen and (min-width:786px){
+    .authors-cards{
+ flex-direction: column;align-items: center;flex-wrap:wrap;box-sizing: border-box;
+}
+ .container-nav ul{display: flex;flex-direction: row;flex-wrap:nowrap;}
+ .container-nav{
+  display: flex;flex-direction: row;justify-content: space-between;align-items: center;
+ }
+   .media-list{ display: flex;flex-direction: row;gap: 20px;align-items: center;flex-wrap: nowrap;
+   }
+}   
+ 
 
 @media screen and (min-width:1024px){
  /** secton1**/
     .container-hero{
-        width: 80%;flex-direction: row;
+        width: 80%;flex-direction: row;align-items: center;flex-wrap: nowrap;
     }
-   .media-list{
-    display: flex;flex-direction: row;
-   } 
+ 
   .trend p{
     font-weight: 900px;font-size: 65px;
 }
    .hero-left{
-    width: 50%;
+    width: 50%;align-items: center;
    }
    .hero-right::after{
-    top: 13%;left: 95%;
+    top: 13%;left: 100%;
+   }
+   .hero-left-prag{
+    font-weight: 500;font-size: 24px;width: 100%;
    }
    .hero-right{
-    width: 50%;
+    width: 50%;margin-left: 20px;
    }
       /** section2**/
   .container-latest-articles{
@@ -64,14 +99,26 @@ margin: auto;
   .latest-right{
     width: 50%;position: sticky;flex-wrap: nowrap;top: 32px;justify-content: flex-start;
   }
+
+.community-countainer{
+    display: flex;flex-direction: row;flex-wrap: nowrap;align-items: center;
 }
 
-
-
+.latest-cards{width: 100%;}
+.footer-container{justify-content: center;margin-top: 0;flex-direction: row;
+  width: 80%;margin: auto;display: flex;align-content: center;margin-top: 40px;
+}
+.last{width: 80%;margin: auto;padding: 20px 40px;flex-direction: row;flex-wrap: nowrap;
+  display: flex;align-items: center;justify-content:space-between;
+}
+}
 @media screen and (min-width:1280px){
+ .authors-cards{
 
+   flex-direction: row;align-items: center;flex-wrap: nowrap;box-sizing: border-box;
 }
-
+}
 @media screen and (min-width:1536px){
-   
+
 }
+

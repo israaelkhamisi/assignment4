@@ -14,6 +14,7 @@ body {
 }
 
 
+
 .container {
   width: 100%;
   background-color: #FFF085;
@@ -150,7 +151,7 @@ body {
 }
 
 .hero-left {
-  width: 45%;
+  width: 100%;
 }
 
 .trend {
@@ -307,7 +308,7 @@ body {
 }
 
 .latest-cards {
-  width: 800px;
+  width: 8000px;
   border: 2px solid black;
   margin-right: 0;
   box-shadow: 4px 6px 1px black;
@@ -704,12 +705,12 @@ body {
   padding-top: 0;margin-top: 2px;
   
 }
-.authors-cards{z-index: 3;position: relative;padding-bottom: 20px;
-gap: 40px;padding-left: 10px;padding-right: 10px;margin-top: 40px;padding-top: 30px;
-  display: flex;justify-content:space-between;align-content: center;
+.authors-cards{z-index: 3;position: relative;padding-bottom: 20px;width: 100%;flex-direction: column;
+gap: 40px;padding-left: 10px;padding-right: 10px;margin-top: 40px;padding-top: 30px;margin-bottom: 40px;
+  display: flex;justify-content:space-between;align-content: center;flex-wrap: nowrap;
 }
  .card1 , .card2 ,.card3{ transition: all 0.5s;border: 3px solid black;box-shadow: 4px 8px 2px black;
-  text-align: center;padding-left: 15px;padding-right: 15px
+  text-align: center;padding:15px 0 ;flex: 1;
 }
 .card1:hover{
    transform: translate(-5px,-5px);
@@ -748,7 +749,7 @@ color: red;
 .card1::before{
   content: "FOUNDER";
   width: 12px 20px;position: absolute;
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: red;top: 20px;left: 70%;
   padding: 2px;font-weight: 700;font-size: 12px;
   transform: rotate(10deg);color: white;
@@ -756,7 +757,7 @@ color: red;
 .card2::before{
   content: "lead";
   width:fit-content;height:  20px;position: absolute;
-  border: 2px solid black;
+  border: 1px solid black;
   background-color:#2B7FFF;top: 20px;left: 70%;
   padding: 5px;font-weight: 700;font-size: 12px;line-height: 16px;
   transform: rotate(-10deg);color: white;
@@ -764,7 +765,7 @@ color: red;
 .card3::before{
   content: "VIRAL";
   width: 12px 20px;position: absolute;
-  border: 2px solid black;
+  border: 1px solid black;
   background-color:#AD46FF;top: 20px;left: 70%;
   padding: 2px;font-weight: 700;font-size: 12px;
   transform: rotate(50deg);color: white;
@@ -795,7 +796,7 @@ color: red;
 .section4{
   background-color: #F5F5F5;
 }
-.community-countainer{padding-top: 50px;margin-bottom: 0;
+.community-countainer{padding-top: 50px;margin-bottom: 0;flex-direction: column;flex-wrap: wrap;
   width: 80%;margin: auto;display: flex;justify-content: space-between;
 }
 .community-title h1{
@@ -877,7 +878,9 @@ padding: 0;margin: 0
 .community-right{padding:5px 30px;box-shadow: 8px 10px 2px black;
   border: 2px solid black;display: flex;flex-direction: column; gap: 40px;
 }
+.community-right h1{
 
+}
 .mark , .alex ,.james{padding:0 10px;
   border: 2px solid black;width: 500px;height: 200px;
 }
@@ -910,18 +913,18 @@ padding: 0;margin: 0
 .section5{
   background-color: #000000;color: white;
 }
-.footer-container{justify-content: center;margin-top: 0;
-  width: 80%;margin: auto;display: flex;align-content: center;margin-top: 40px;
+.footer-container{justify-content: space-between;gap: 40px;padding-top: 40;
+  width: 80%;display: flex;align-items: stretch;margin-top: 20px;margin-bottom: 20px;
 }
 .footer-container h1{
-  font-weight: 900;font-size: 30px;line-height: 36px;
+  font-weight: 900;font-size: 30px;line-height: 36px;margin: 0;
 }
 .footer-container p{
-  font-weight: 400;font-size: 18px;line-height: 29px;
+  font-weight: 400;font-size: 18px;line-height: 29px;margin: 0;
 }
 .block{
-  display: inline-block;display: flex;flex-direction: column;
-  gap: 20px;width: 470px;height: 250px;
+  display: inline-block;display: flex;flex-direction: column;width: 100%;
+  gap: 20px;
 }
 .block input{transition: all 0.1s
  ; border: 1px solid #525252;color: #525252;padding: 13px;
@@ -931,17 +934,19 @@ input:focus{
   border: 1px solid yellow;outline: none;
 
 }
-.sec3{
-  margin-left: 40px;padding-bottom: 40px;
-}
+
 .sec1{
-  margin-right: 50px;padding: 5px;
+  width: 30%;margin-top:
 }
+.sec3{
+  width:40%
+}
+
 .sec1 p{
   margin-bottom: 0px;padding: 0;
 }
 .sec2 a{transition: all 0.5s;font-weight: 500;font-size: 20px;
-  display: flex;text-decoration: none;flex-direction: column;padding:5px 10px;color: white;
+  display:block;text-decoration: none;flex-direction: column;padding:5px 0;color: white;
 }
 .yellow:hover {
   color: yellow;
@@ -964,4 +969,3 @@ hr{
 }
 .last div{display: flex;gap: 30px;
 }
-/** end-footer**/
